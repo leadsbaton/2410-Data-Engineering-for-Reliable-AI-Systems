@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stop Rebuilding What You Already Have: Why Data Product
+    Reusability Is the Key to AI-Ready Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white font-sans">
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Banner Images -->
+  <div class="max-w-5xl mx-auto mt-6">
+    <img src="assets/images/image83a.png" alt="Simpplr Banner" class="w-full">
+  </div>
+  <div class="max-w-5xl mx-auto mt-6">
+    <img src="assets/images/image83b.png" alt="Webinar Banner" class="w-full">
+  </div>
+
+  <!-- Title + Register -->
+  <div class="max-w-5xl mx-auto mt-12 text-center">
+    <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 leading-snug mb-8">
+      Stop Rebuilding What You Already Have: Why Data Product
+      Reusability Is the Key to AI-Ready Data
+    </h1>
+    <button id="registerBtn"
+      class="mb-12 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded font-semibold shadow">
+      REGISTER NOW
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="max-w-5xl mx-auto text-gray-800 space-y-4 px-4">
+    <p>
+      Organizations are spending millions building data products that get used once and forgotten -
+      while the team down the hall builds the same things from scratch for a different project. It's a
+      cycle that drains budgets, delays AI initiatives, and erodes trust in data.
+    </p>
+
+    <p>In this insider session, Quest's Sr. Product Marketing Manager <span class="font-semibold">Ryan Crochet</span>,
+      Chief Value
+      Officer <span class="font-semibold">Stephan Liozu</span> and Principal Advisor and Industry Analyst at Radiant
+      Advisors John
+      O'Brien will make the case that reusability isn't just a "nice-to-have", it's the economic engine
+      behind successful data strategy. They will explore how leading organizations are treating data
+      products as shared, composable assets rather than disposable project artifacts and why this
+      shift can mean the difference between a data function that scales and one that stalls.
+    </p>
+
+
+    <p>What You'll Learn:</p>
+
+    <ul class="list-disc list-inside space-y-2">
+      <li>The hidden costs of duplicative efforts and why most organizations drastically
+        underestimate them</li>
+      <li>How a "build once, use many" approach can reduce delivery costs by 30-40% and
+        accelerate use cases</li>
+      <li>Why most data product costs are one-time investments that most teams fail to amortize</li>
+      <li>What a governed data marketplace looks like and how it drives adoption and trust</li>
+      <li>How embedding governance at inception can help make data products reusable by default
+        (not by accident)</li>
+
+    </ul>
+
+    <p>
+      <span id="registerText" class="text-red-600 font-bold cursor-pointer hover:underline">REGISTER NOW</span>
+      to attend the webinar <span class="font-semibold"> Stop Rebuilding What You Already Have: Why Data
+        Product Reusability Is the Key to AI-Ready Data.</span>
+    </p>
+
+    <p> Don't miss this live event on <span class="font-semibold">Wednesday, March 25th, 11 AM PT / 2 PM ET.</span></p>
+
+  </div>
+
+  <!-- Speakers & Moderator Section -->
+  <div class="max-w-5xl mx-auto mt-16 px-4">
+
+    <!-- 3 Column Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+
+      <!-- Speaker 1 -->
+      <div>
+        <h3 class="text-red-900 font-bold uppercase mb-8">Speakers</h3>
+
+        <img src="assets/images/image83c.png" alt="John O'Brien"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-semibold">
+          John O'Brien
+        </p>
+        <p class="text-sm text-gray-600">Principal Advisor and Industry <br>Analyst<br>Radiant Advisors</p>
+      </div>
+
+      <!-- Speaker 2 -->
+      <div>
+        <h3 class="text-red-900 font-bold uppercase mb-8 invisible">.</h3>
+
+        <img src="assets/images/image83d.png" alt="Ryan Crochet"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-semibold">
+          Ryan Crochet
+        </p>
+        <p class="text-sm text-gray-600">Sr. Product Marketing <br>Manager<br>Quest</p>
+      </div>
+
+      <!-- Speaker 3 -->
+      <div>
+        <h3 class="text-red-900 font-bold uppercase mb-8 invisible">.</h3>
+
+        <img src="assets/images/image 83e.png" alt="Stephan Liozu"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-semibold">
+          Stephan Liozu
+        </p>
+        <p class="text-sm text-gray-600">Chief Value Officer<br>Quest</p>
+      </div>
+
+      <!-- Moderator -->
+      <div>
+        <h3 class="text-red-600 font-bold uppercase mb-8">Moderator</h3>
+
+        <img src="assets/images/image83f.png" alt="Stephen Faig"
+          class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto mb-3 shadow">
+        <p class="font-semibold">Stephen Faig</p>
+        <p class="text-sm text-gray-600">Research Director<br>Unisphere Research and DBTA</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div id="footer" class="mt-12"></div>
+  <!-- JS -->
+  <script>
+    // Load navbar and footer
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+
+    // Register actions
+    function goRegister() {
+      window.open('register.html', '_blank');
+    }
+
+    document.getElementById('registerBtn').addEventListener('click', goRegister);
+    document.getElementById('registerText').addEventListener('click', goRegister);
+  </script>
+
+</body>
+
+</html>
